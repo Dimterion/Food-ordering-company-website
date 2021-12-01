@@ -17,28 +17,148 @@
   background-color: #f2f2f2;
 }
 
+.header-block span {
+  background-color: #e6e5e5;
+  padding: 20px;
+  font-weight: bold;
+  opacity: 0.7;
+  -webkit-box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+}
+
 .header-block i {
-  background-color: #aaaaaa;
+  margin-right: 15px;
+}
+
+.header-block h2 {
+  padding: 35px 0 40px;
+}
+
+.header-block p {
+  padding: 0 20px 30px;
+}
+
+.header-block a {
+  padding: 0 0 50px;
+}
+
+.presentation h2 {
+  padding: 40px 0 5px 10px;
+}
+
+.presentation-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.presentation-block__card a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 25px;
+  width: 335px;
+  height: 80px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: black;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+
+.presentation-block__card a i {
+  color: gray;
+  padding: 0 15px;
+}
+
+.presentation-block__card a div {
+  background-color: #9356DC;
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 16px;
+}
+
+.presentation-block__card a p {
+  font-weight: bold;
+}
+
+.presentation-block__card a:hover {
+  background-color: #ffddf6;
+}
+
+.presentation-block__card a:hover i {
+  color: #9356DC;
+}
+
+.restaurants {
+  margin-top: 50px;
+  background-color: #f2f2f2;
+}
+
+.restaurants h2 {
+  padding: 50px 0 20px 10px;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 18px;
 }
 
-h1, h2, h3 {
+h1 {
   font-family: 'Shrikhand', cursive;
 }
 
 header a img {
   display: block;
   margin: auto;
-  padding: 20px;
+  padding: 15px;
 }
 
 button {
   color: white;
   background-color: #FF79DA;
   border: none;
-  border-radius: 25px;
+  border-radius: 50px;
+  padding: 18px 25px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), inset 0 -30px 35px -20px #9933FF;
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), inset 0 -30px 35px -20px #9933FF;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+
+button:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), inset 0 -20px 30px -10px #9933FF;
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), inset 0 -20px 30px -10px #9933FF;
 }
 /*# sourceMappingURL=main.css.map */

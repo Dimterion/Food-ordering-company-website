@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&family=Shrikhand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&family=Shrikhand&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/d21300426d.js" crossorigin="anonymous"></script>
   <title>ohmyfood</title>
 </head>
@@ -19,14 +19,52 @@
   <header>
     <a href="index.html"><img src="images/logo/ohmyfood@2x.svg"></a>
     <div class="header-block">
-      <i class="fas fa-map-marker-alt">Paris, Belleville</i>
-      <h1>Book the menu you like</h1>
+      <span><i class="fas fa-map-marker-alt"></i>Paris, Belleville</span>
+      <h2>Book the menu you like</h2>
       <p>Discover top-of-the-art restaurants we picked for you</p>
-      <div class="btn">
-        <button type="submit">Explore our restaurants</button>
-      </div>
+      <a>
+        <button type="button" onClick="document.getElementById('restaurants-cards').scrollIntoView()">Explore our restaurants</button>
+      </a>
     </div>
   </header>
+
+  <!--How it works section-->
+
+  <section class="presentation">
+    <h2>How it works</h2>
+    <div class="presentation-block">
+      <div class="presentation-block__card">
+        <a href="#restaurants-cards">
+          <div>1</div>
+          <i class="fas fa-mobile-alt"></i>
+          <p>Chose a restaurant</p>
+        </a>
+      </div>
+      <div class="presentation-block__card">
+        <a href="#restaurants-cards">
+          <div>2</div>
+          <i class="fas fa-list-ul"></i>
+          <p>Create your menu</p>
+        </a>
+      </div>
+      <div class="presentation-block__card">
+        <a href="#restaurants-cards">
+          <div>3</div>
+          <i class="fas fa-store"></i>
+          <p>Go enjoy it at the restaurant</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!--Restaurants section-->
+
+  <section id="restaurants-cards" class="restaurants">
+    <h2>Restaurants</h2>
+    <div class="restaurants-card">
+      
+    </div>
+  </section>
 
 </body>
 </html>
