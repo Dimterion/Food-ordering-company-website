@@ -1,5 +1,6 @@
 @import 'config';
 @import 'home';
+@import 'responsive';
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -17,7 +18,7 @@ header a img {
 }
 
 button {
-  color: white;
+  color: $button-text-color;
   background-color: $secondary-color;
   border: none;
   border-radius: 50px;
@@ -25,10 +26,11 @@ button {
   font-weight: bold;
   cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
-  inset 0 -30px 35px -20px #9933FF;
+  inset 0 -30px 35px -20px $button-shadow-color;
   transition: 0.9s;
+
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5),
-    inset 0 -20px 30px -10px #9933FF;
+    inset 0 -20px 30px -10px $button-shadow-color;
   }
 }

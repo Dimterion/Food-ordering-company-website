@@ -3,9 +3,37 @@ $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 $light-gray: #f2f2f2;
 $dark-gray: hsl(0, 2%, 90%);
+$button-text-color: white;
+$button-shadow-color: #9933FF;
+$cards-hover-color: #ffddf6;
+$hearts-hover-color: #bf70df;
+$new-box-text: rgb(16, 136, 16);
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+@mixin new-box {
+  background-color: $tertiary-color;
+  color: $new-box-text;
+  font-weight: bold;
+  border-radius: 3px;
+  height: 5vh;
+  width: 24vw;
+  position: relative;
+  text-align: center;
+  top: 8vh;
+  left: 66vw;
+  display: inline-flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin-top: -34px;
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 768px) {
+      @content;
+  }
 }
