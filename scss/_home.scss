@@ -45,13 +45,14 @@
     align-items: center;
     background-color: $light-gray;
     border-radius: 25px;
-    width: 335px;
+    width: 50vh;
     height: 80px;
     margin-top: 20px;
     text-decoration: none;
     color: black;
     transition: 0.9s;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
     
     i {
       color: gray;
@@ -91,6 +92,7 @@
   flex-flow: column wrap;
   align-content: center;
   margin-top: 50px;
+  padding-bottom: 50px;
   background-color: $light-gray;
   
   h2 {

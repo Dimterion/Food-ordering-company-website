@@ -34,3 +34,38 @@ button {
     inset 0 -20px 30px -10px $button-shadow-color;
   }
 }
+
+footer {
+  background-color: $footer-background;
+  color: white;
+  padding-bottom: 20px;
+
+  .footer-block {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 15px 0 15px 30px;
+
+    ul {
+      list-style-type: none;
+    }
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    line-height: 2rem;
+    
+    .fas.fa-hands-helping {
+      font-size: 0.8rem;
+    }
+
+    i {
+      padding-right: 10px;
+    }
+  }
+}

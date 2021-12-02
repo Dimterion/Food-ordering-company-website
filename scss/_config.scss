@@ -5,9 +5,10 @@ $light-gray: #f2f2f2;
 $dark-gray: hsl(0, 2%, 90%);
 $button-text-color: white;
 $button-shadow-color: #9933FF;
-$cards-hover-color: #ffddf6;
+$cards-hover-color: #f0e0f0;
 $hearts-hover-color: #bf70df;
 $new-box-text: rgb(16, 136, 16);
+$footer-background: rgba(32, 35, 43, 0.89);
 
 * {
   box-sizing: border-box;
@@ -32,8 +33,20 @@ $new-box-text: rgb(16, 136, 16);
   margin-top: -34px;
 }
 
+@mixin media-xl {
+  @media screen and (min-width: 992px) {
+      @content;
+  }
+}
+
 @mixin media-lg {
   @media screen and (min-width: 768px) {
+      @content;
+  }
+}
+
+@mixin media-sm {
+  @media screen and (max-width: 300px) {
       @content;
   }
 }
