@@ -1,3 +1,47 @@
+/*--Loading block--*/
+
+.loading {
+  position: absolute;
+  display: flex;
+  visibility: visible;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  &::after {
+  content: "";
+  width: 10vw;
+  height: 10vw;
+  border: 15px solid $primary-color;
+  border-top-color: $secondary-color;
+  border-bottom-color: $secondary-color;
+  border-radius: 50%;
+  animation: loading 4.4s ease 100ms;
+  animation-fill-mode: forwards;
+  }
+}
+
+#index-animation {
+  visibility: hidden;
+  animation: hideAnimation 0s ease-in 4.7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loading {
+  to {
+      transform: rotate(2turn);
+      visibility: hidden;
+  }
+}
+
+@keyframes hideAnimation {
+  to {
+    visibility: visible;
+  }
+}
+
+/*--Main section--*/
+
 .header-block {
   display: flex;
   flex-flow: column wrap;
@@ -45,7 +89,7 @@
     align-items: center;
     background-color: $light-gray;
     border-radius: 25px;
-    width: 50vh;
+    width: 47vh;
     height: 80px;
     margin-top: 20px;
     text-decoration: none;
@@ -56,7 +100,7 @@
     
     i {
       color: gray;
-      padding: 0 15px;
+      padding: 0 10px;
     }
     
     div {

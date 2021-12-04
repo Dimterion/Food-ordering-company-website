@@ -1,113 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,100&family=Shrikhand&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/d21300426d.js" crossorigin="anonymous"></script>
-  <title>ohmyfood</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,100&family=Shrikhand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d21300426d.js" crossorigin="anonymous"></script>
+    <title>ohmyfood</title>
+  </head>
 
-  <!--Logo + Welcome message-->
+  <!--Loading block-->
   
-  <header>
-    <a href="index.html"><img src="images/logo/ohmyfood@2x.svg"></a>
-    <div class="header-block">
-      <span><i class="fas fa-map-marker-alt"></i>Paris, Belleville</span>
-      <h2>Book the menu you like</h2>
-      <p>Discover top-of-the-art restaurants we picked for you</p>
-      <a>
-        <button type="button" onClick="document.getElementById('restaurants-cards').scrollIntoView()">Explore our restaurants</button>
-      </a>
-    </div>
-  </header>
+  <div class="loading"></div>
 
-  <!--How it works section-->
+  <body id="index-animation">
 
-  <section class="presentation">
-    <h2>How it works</h2>
-    <div class="presentation-block">
-      <div class="presentation-block__card">
-        <a href="#restaurants-cards">
-          <div>1</div>
-          <i class="fas fa-mobile-alt"></i>
-          <p>Chose a restaurant</p>
+    <!--Logo + Welcome message-->
+    
+    <header>
+      <a href="index.html"><img src="images/logo/ohmyfood@2x.svg"></a>
+      <div class="header-block">
+        <span><i class="fas fa-map-marker-alt"></i>Paris, Belleville</span>
+        <h2>Book the menu you like</h2>
+        <p>Discover top-of-the-art restaurants we picked for you</p>
+        <a>
+          <button type="button" onClick="document.getElementById('restaurants-cards').scrollIntoView()">Explore our restaurants</button>
         </a>
       </div>
-      <div class="presentation-block__card">
-        <a href="#restaurants-cards">
-          <div>2</div>
-          <i class="fas fa-list-ul"></i>
-          <p>Create your menu</p>
+    </header>
+
+    <!--How it works section-->
+
+    <section class="presentation">
+      <h2>How it works</h2>
+      <div class="presentation-block">
+        <div class="presentation-block__card">
+          <a href="#restaurants-cards">
+            <div>1</div>
+            <i class="fas fa-mobile-alt"></i>
+            <p>Chose a restaurant</p>
+          </a>
+        </div>
+        <div class="presentation-block__card">
+          <a href="#restaurants-cards">
+            <div>2</div>
+            <i class="fas fa-list-ul"></i>
+            <p>Create your menu</p>
+          </a>
+        </div>
+        <div class="presentation-block__card">
+          <a href="#restaurants-cards">
+            <div>3</div>
+            <i class="fas fa-store"></i>
+            <p>Go enjoy it at the restaurant</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--Restaurants section-->
+
+    <section id="restaurants-cards" class="restaurants">
+      <h2>Restaurants</h2>
+      <div class="restaurants__card">
+        <a href="#">
+          <div class="new-box">New</div>
+          <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="The Full Palette restaurant">
+          <h3>The Full Palette</h3>
+          <p>New York</p>
+          <i class="far fa-heart"></i>
         </a>
       </div>
-      <div class="presentation-block__card">
-        <a href="#restaurants-cards">
-          <div>3</div>
-          <i class="fas fa-store"></i>
-          <p>Go enjoy it at the restaurant</p>
+      <div class="restaurants__card">
+        <a href="#">
+          <div class="new-box">New</div>
+          <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="The Enchanted Plate restaurant">
+          <h3>The Enchanted Plate</h3>
+          <p>New York</p>
+          <i class="far fa-heart"></i>
         </a>
       </div>
-    </div>
-  </section>
+      <div class="restaurants__card">
+        <a href="#">
+          <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Bastille restaurant">
+          <h3>Bastille</h3>
+          <p>New York</p>
+          <i class="far fa-heart"></i>
+        </a>
+      </div>
+      <div class="restaurants__card">
+        <a href="#">
+          <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le Gourmand restaurant">
+          <h3>Le Gourmand</h3>
+          <p>New York</p>
+          <i class="far fa-heart"></i>
+        </a>
+      </div>
+    </section>
 
-  <!--Restaurants section-->
+    <!--Footer-->
 
-  <section id="restaurants-cards" class="restaurants">
-    <h2>Restaurants</h2>
-    <div class="restaurants__card">
-      <a href="#">
-        <div class="new-box">New</div>
-        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="The Full Palette restaurant">
-        <h3>The Full Palette</h3>
-        <p>New York</p>
-        <i class="far fa-heart"></i>
-      </a>
-    </div>
-    <div class="restaurants__card">
-      <a href="#">
-        <div class="new-box">New</div>
-        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="The Enchanted Plate restaurant">
-        <h3>The Enchanted Plate</h3>
-        <p>New York</p>
-        <i class="far fa-heart"></i>
-      </a>
-    </div>
-    <div class="restaurants__card">
-      <a href="#">
-        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Bastille restaurant">
-        <h3>Bastille</h3>
-        <p>New York</p>
-        <i class="far fa-heart"></i>
-      </a>
-    </div>
-    <div class="restaurants__card">
-      <a href="#">
-        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le Gourmand restaurant">
-        <h3>Le Gourmand</h3>
-        <p>New York</p>
-        <i class="far fa-heart"></i>
-      </a>
-    </div>
-  </section>
+    <footer>
+      <div class="footer-block">
+        <h1>ohmyfood</h1>
+        <ul>
+          <li><a href="#"><i class="fas fa-utensils"></i>Suggest a restaurant</a></li>
+          <li><a href="#"><i class="fas fa-hands-helping"></i>Become a partner</a></li>
+          <li><a href="#">Legal</a></li>
+          <li><a href="mailto: placeholderemail@placeholder.com">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
 
-  <footer>
-    <div class="footer-block">
-      <h1>ohmyfood</h1>
-      <ul>
-        <li><a href="#"><i class="fas fa-utensils"></i>Suggest a restaurant</a></li>
-        <li><a href="#"><i class="fas fa-hands-helping"></i>Become a partner</a></li>
-        <li><a href="#">Legal</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-  </footer>
-
-</body>
+  </body>
 </html>

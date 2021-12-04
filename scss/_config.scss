@@ -25,12 +25,12 @@ $footer-background: rgba(32, 35, 43, 0.89);
   width: 24vw;
   position: relative;
   text-align: center;
-  top: 8vh;
+  top: 10vh;
   left: 66vw;
   display: inline-flex;
   flex-flow: column wrap;
   justify-content: center;
-  margin-top: -34px;
+  margin-top: -50px;
 }
 
 @mixin media-xl {
