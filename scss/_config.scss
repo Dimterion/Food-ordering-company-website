@@ -1,14 +1,8 @@
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
-$light-gray: #f2f2f2;
-$dark-gray: hsl(0, 2%, 90%);
-$button-text-color: white;
-$button-shadow-color: #9933FF;
-$cards-hover-color: #f0e0f0;
-$hearts-hover-color: #bf70df;
-$new-box-text: rgb(16, 136, 16);
-$footer-background: rgba(32, 35, 43, 0.89);
+
+$main-background: gray;
 
 * {
   box-sizing: border-box;
@@ -18,7 +12,7 @@ $footer-background: rgba(32, 35, 43, 0.89);
 
 @mixin new-box {
   background-color: $tertiary-color;
-  color: $new-box-text;
+  color: darken($tertiary-color, 40);
   font-weight: bold;
   border-radius: 3px;
   height: 5vh;

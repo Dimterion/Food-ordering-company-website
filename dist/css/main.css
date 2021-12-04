@@ -78,16 +78,16 @@
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   text-align: center;
-  background-color: #f2f2f2;
+  background-color: #f3f3f3;
 }
 
 .header-block span {
-  background-color: #e6e5e5;
+  background-color: #e6e6e6;
   padding: 20px;
   font-weight: bold;
   opacity: 0.7;
-  -webkit-box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.4);
   font-size: 20px;
 }
 
@@ -135,7 +135,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f2f2f2;
+  background-color: #f3f3f3;
   border-radius: 25px;
   width: 47vh;
   height: 80px;
@@ -179,9 +179,9 @@
 }
 
 .presentation-block__card a:hover {
-  background-color: #f0e0f0;
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  background-color: #ece1f9;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
 }
 
 .presentation-block__card a:hover i {
@@ -200,7 +200,7 @@
       align-content: center;
   margin-top: 50px;
   padding-bottom: 50px;
-  background-color: #f2f2f2;
+  background-color: #f3f3f3;
 }
 
 .restaurants h2 {
@@ -230,7 +230,7 @@
 
 .restaurants__card a .new-box {
   background-color: #99E2D0;
-  color: #108810;
+  color: #278870;
   font-weight: bold;
   border-radius: 3px;
   height: 5vh;
@@ -282,13 +282,13 @@
 }
 
 .restaurants__card a i:hover {
-  color: #bf70df;
+  color: #ae80e5;
   font-weight: 600;
 }
 
 .restaurants__card a:hover {
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (min-width: 768px) {
@@ -350,25 +350,24 @@ header a img {
 
 button {
   color: white;
-  background-color: #FF79DA;
+  background-color: #a16be0;
   border: none;
   border-radius: 50px;
   padding: 18px 25px;
-  font-weight: bold;
   cursor: pointer;
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), inset 0 -30px 35px -20px #9933FF;
-          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), inset 0 -30px 35px -20px #9933FF;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), inset 0 20px 40px -15px #ff46cc;
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), inset 0 20px 40px -15px #ff46cc;
   -webkit-transition: 0.9s;
   transition: 0.9s;
 }
 
 button:hover {
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), inset 0 -20px 30px -10px #9933FF;
-          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), inset 0 -20px 30px -10px #9933FF;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), inset 0 20px 40px -15px #df00a1;
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), inset 0 20px 40px -15px #df00a1;
 }
 
 footer {
-  background-color: rgba(32, 35, 43, 0.89);
+  background-color: #343434;
   color: white;
   padding-bottom: 20px;
 }

@@ -46,14 +46,14 @@
   display: flex;
   flex-flow: column wrap;
   text-align: center;
-  background-color: $light-gray;
+  background-color: lighten($main-background, 45);
 
   span {
-    background-color: $dark-gray;
+    background-color: lighten($main-background, 40);
     padding: 20px;
     font-weight: bold;
     opacity: 0.7;
-    box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.3);
+    box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4);
     font-size: 20px;
   }
 
@@ -87,19 +87,19 @@
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    background-color: $light-gray;
+    background-color: lighten($main-background, 45);
     border-radius: 25px;
     width: 47vh;
     height: 80px;
     margin-top: 20px;
     text-decoration: none;
-    color: black;
+    color: darken($primary-color, 100);
     transition: 0.9s;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     font-size: 1rem;
     
     i {
-      color: gray;
+      color: $main-background;
       padding: 0 10px;
     }
     
@@ -113,7 +113,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      color: white;
+      color: lighten($primary-color, 100);
       font-size: 16px;
     }
     
@@ -122,8 +122,8 @@
     }
     
     &:hover {
-      background-color: $cards-hover-color;
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+      background-color: lighten($primary-color, 33);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
       i {
         color: $primary-color;
       }
@@ -137,7 +137,7 @@
   align-content: center;
   margin-top: 50px;
   padding-bottom: 50px;
-  background-color: $light-gray;
+  background-color: lighten($main-background, 45);
   
   h2 {
     padding: 50px 0 20px 0px;
@@ -147,8 +147,8 @@
     display: flex;
     flex-flow: column wrap;
     text-decoration: none;
-    color: black;
-    background-color: white;
+    color: darken($primary-color, 100);
+    background-color: lighten($primary-color, 100);
     border-radius: 25px;
     overflow: hidden;
     width: 95vw;
@@ -183,16 +183,16 @@
       left: 80vw;
       top: -4vh;
       font-size: 2rem;
-      -webkit-text-stroke: 1px white;
+      -webkit-text-stroke: 1px lighten($primary-color, 100);
       transition: 1s;
       &:hover {
-        color: $hearts-hover-color;
+        color: lighten($primary-color, 10);
         font-weight: 600;
       }
     }
 
     &:hover {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
     }
   }
 }
