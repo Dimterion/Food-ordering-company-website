@@ -1,6 +1,6 @@
 /*--Loading block--*/
 
-.loading {
+.loading-home {
   position: absolute;
   display: flex;
   visibility: visible;
@@ -16,14 +16,14 @@
   border-top-color: $secondary-color;
   border-bottom-color: $secondary-color;
   border-radius: 50%;
-  animation: loading 4.4s ease 100ms;
+  animation: loading 2.4s ease 100ms;
   animation-fill-mode: forwards;
   }
 }
 
-#index-animation {
+#animation-home {
   visibility: hidden;
-  animation: hideAnimation 0s ease-in 4.7s;
+  animation: hideAnimation 0s ease-in 2.7s;
   animation-fill-mode: forwards;
 }
 
@@ -185,6 +185,7 @@
       font-size: 2rem;
       -webkit-text-stroke: 1px lighten($primary-color, 100);
       transition: 1s;
+      transition-delay: 100ms;
       &:hover {
         color: lighten($primary-color, 10);
         font-weight: 600;
