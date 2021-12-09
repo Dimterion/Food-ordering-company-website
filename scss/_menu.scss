@@ -1,0 +1,146 @@
+.fas.fa-arrow-left {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  font-size: 1.3rem;
+  color: darken($main-background, 20);
+}
+
+u {
+  text-decoration: underline $tertiary-color 0.3rem;
+}
+
+.menu img {
+  object-fit: cover;  
+  height: 40vh;
+  width: 100%;
+}
+
+.menu-block {
+  background-color: lighten($main-background, 45);
+  border-radius: 30px 30px 0 0;
+  position: relative;
+  top: -8vh;
+  padding-bottom: 12vh;
+  margin-bottom: -8vh;
+
+  &__title {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0 3vw;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: initial;
+    }
+
+    i {
+      font-size: 2rem;
+      -webkit-text-stroke: 1px lighten($primary-color, 100);
+      transition: 1s;
+      transition-delay: 100ms;
+      padding-right: 4vw;
+      
+      &:hover {
+        color: lighten($primary-color, 10);
+        font-weight: 600;
+      }
+    }
+  }
+
+  a button {
+    width: 200px;
+    position: relative;
+    top: 5vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+.menu-section h2 {
+  font-size: 1.1rem;
+  font-weight: initial;
+  margin: 2vh 3vw;
+  text-align: left;
+}
+
+.main-menu-block {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0 2vw;
+}
+
+.menu-section__block {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lighten($primary-color, 100);;
+  border-radius: 15px;
+  height: 10vh;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 15px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.9s;
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .menu-description {
+    position: relative;
+    margin: auto 0;
+    padding-left: 5%;
+    line-height: 1.5rem;
+    width: 100%;
+
+    h3 {
+      margin: auto;
+    }
+  }
+
+  .text-block {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    span {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+
+    b {
+      padding-right: 5%;
+    }
+  }
+
+  .check-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0%;
+    background-color: $tertiary-color;
+    color: lighten($primary-color, 100);;
+    position: relative;
+    left: auto;
+    height: inherit;
+    transition: 2s;
+
+    .fas {
+      display: inline-block;
+      transition: 1s;
+      transform: rotate(90deg);
+    }
+  }
+
+  &:hover .check-icon {
+    width: 20%;
+  }
+
+  &:hover .fas {
+    transform: rotate(360deg);
+  }
+}
