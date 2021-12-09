@@ -313,19 +313,31 @@
   h2 {
     text-align: center;
   }
+  .restaurants {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .restaurants h2 {
+    width: 100%;
+  }
   .restaurants__card a {
-    width: 60vw;
-    height: 60vh;
+    width: 45vw;
+    height: 59vh;
   }
   .restaurants__card a img {
     height: 50vh;
   }
   .restaurants__card a .new-box {
     width: 10vw;
-    left: 48vw;
+    left: 33vw;
   }
   .restaurants__card a i {
-    left: 55vw;
+    left: 40vw;
     top: -2vh;
   }
   .footer-block {
@@ -399,6 +411,7 @@ u {
   -webkit-transition-delay: 100ms;
           transition-delay: 100ms;
   padding-right: 4vw;
+  cursor: pointer;
 }
 
 .menu-block__title i:hover {

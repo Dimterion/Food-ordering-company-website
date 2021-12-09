@@ -41,6 +41,7 @@ u {
       transition: 1s;
       transition-delay: 100ms;
       padding-right: 4vw;
+      cursor: pointer;
       
       &:hover {
         color: lighten($primary-color, 10);

@@ -20,9 +20,18 @@
     text-align: center;
   }
 
+  .restaurants {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+
+  .restaurants h2 {
+    width: 100%;
+  }
+
   .restaurants__card a {
-    width: 60vw;
-    height: 60vh;
+    width: 45vw;
+    height: 59vh;
 
     img {
       height: 50vh;
@@ -30,11 +39,11 @@
 
     .new-box {
       width: 10vw;
-      left: 48vw;
+      left: 33vw;
     }
 
     i {
-      left: 55vw;
+      left: 40vw;
       top: -2vh;
     }
   }
