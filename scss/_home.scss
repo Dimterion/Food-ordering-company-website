@@ -47,6 +47,7 @@
   flex-flow: column wrap;
   text-align: center;
   background-color: lighten($main-background, 45);
+  padding-bottom: 5vh;
 
   span {
     background-color: lighten($main-background, 40);
@@ -67,10 +68,6 @@
   
   p {
     padding: 0 20px 30px;
-  }
-  
-  a {
-    padding: 0 0 50px;
   }
 }
 

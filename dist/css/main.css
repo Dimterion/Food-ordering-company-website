@@ -79,6 +79,7 @@
           flex-flow: column wrap;
   text-align: center;
   background-color: #f3f3f3;
+  padding-bottom: 5vh;
 }
 
 .header-block span {
@@ -101,10 +102,6 @@
 
 .header-block p {
   padding: 0 20px 30px;
-}
-
-.header-block a {
-  padding: 0 0 50px;
 }
 
 .presentation h2 {
@@ -326,18 +323,18 @@
     width: 100%;
   }
   .restaurants__card a {
-    width: 45vw;
-    height: 59vh;
+    width: 35vw;
+    height: 40vh;
   }
   .restaurants__card a img {
-    height: 50vh;
+    height: 30vh;
   }
   .restaurants__card a .new-box {
     width: 10vw;
-    left: 33vw;
+    left: 23vw;
   }
   .restaurants__card a i {
-    left: 40vw;
+    left: 30vw;
     top: -2vh;
   }
   .footer-block {
@@ -346,16 +343,75 @@
             align-items: center;
   }
   .menu-block__title {
-    margin: 0 4vw;
+    margin: 0 15vw;
+  }
+  .menu-block__title i {
+    margin-right: -4vw;
   }
   .main-menu-block {
-    margin: 0 5vw;
+    margin: 0 15vw;
   }
   .menu-section h2 {
-    padding: 0 5vw;
+    padding: 0 15vw;
   }
 }
 
+/*--Loading block--*/
+#animation-menu {
+  -webkit-animation: menu-load 1s ease-in forwards;
+          animation: menu-load 1s ease-in forwards;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+#entrees-animation {
+  -webkit-animation: menu-load 1s ease-in forwards 1s;
+          animation: menu-load 1s ease-in forwards 1s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+#main-dish-animation {
+  -webkit-animation: menu-load 1s ease-in forwards 2s;
+          animation: menu-load 1s ease-in forwards 2s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+#desserts-animation {
+  -webkit-animation: menu-load 1s ease-in forwards 3s;
+          animation: menu-load 1s ease-in forwards 3s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+@-webkit-keyframes menu-load {
+  0% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes menu-load {
+  0% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/*--Main section--*/
 .fas.fa-arrow-left {
   position: absolute;
   top: 20px;
@@ -545,6 +601,14 @@ u {
           transform: rotate(360deg);
 }
 
+#order-button {
+  position: relative;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 7vh;
+  left: 50%;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -571,6 +635,8 @@ button {
           box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), inset 0 20px 40px -15px #ff46cc;
   -webkit-transition: 0.9s;
   transition: 0.9s;
+  width: 250px;
+  margin: auto;
 }
 
 button:hover {

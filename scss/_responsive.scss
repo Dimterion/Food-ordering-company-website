@@ -30,20 +30,20 @@
   }
 
   .restaurants__card a {
-    width: 45vw;
-    height: 59vh;
+    width: 35vw;
+    height: 40vh;
 
     img {
-      height: 50vh;
+      height: 30vh;
     }
 
     .new-box {
       width: 10vw;
-      left: 33vw;
+      left: 23vw;
     }
 
     i {
-      left: 40vw;
+      left: 30vw;
       top: -2vh;
     }
   }
@@ -53,14 +53,18 @@
   }
 
   .menu-block__title {
-    margin: 0 4vw;
+    margin: 0 15vw;
+
+    i {
+      margin-right: -4vw;
+    }
   }
 
   .main-menu-block {
-    margin: 0 5vw;
+    margin: 0 15vw;
   }
 
   .menu-section h2 {
-    padding: 0 5vw;
+    padding: 0 15vw;
   }
 }
