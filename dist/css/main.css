@@ -354,6 +354,15 @@
   .menu-section h2 {
     padding: 0 15vw;
   }
+  .menu-section__block .menu-description {
+    font-size: 1.2rem;
+  }
+  .menu-section__block .menu-description h3 {
+    line-height: 2rem;
+  }
+  .menu-section__block .text-block {
+    line-height: 2rem;
+  }
 }
 
 /*--Loading block--*/
@@ -514,7 +523,7 @@ u {
           align-items: center;
   background-color: white;
   border-radius: 15px;
-  height: 10vh;
+  height: 12vh;
   overflow: hidden;
   cursor: pointer;
   margin-bottom: 15px;
@@ -522,6 +531,7 @@ u {
           box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.9s;
   transition: 0.9s;
+  font-size: 0.9rem;
 }
 
 .menu-section__block:hover {

@@ -67,4 +67,16 @@
   .menu-section h2 {
     padding: 0 15vw;
   }
+
+  .menu-section__block .menu-description {
+    font-size: 1.2rem;
+
+    h3 {
+      line-height: 2rem;
+    }
+  }
+
+  .menu-section__block .text-block {
+    line-height: 2rem;
+  }
 }
