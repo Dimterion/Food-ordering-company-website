@@ -600,6 +600,7 @@ u {
   transition: 1s;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  font-size: 1.5rem;
 }
 
 .menu-section__block:hover .check-icon {
