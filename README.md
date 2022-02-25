@@ -10,7 +10,7 @@ OpenClassrooms project
 
 HTML, CSS/SASS
 
-# Task
+## Task
 
 - Build a landing page and four restaurants menus pages for a website that offers customers a selection of various restaurants to order food
 - Use provided mockups, specifications and design: [Homepage](https://github.com/Dimterion/Food-ordering-company-website/blob/main/dist/images/ohmyfood%20website%20design%20example%20-%20homepage.png), [Restaurant-1-Menu](https://github.com/Dimterion/Food-ordering-company-website/blob/main/dist/images/ohmyfood%20website%20design%20example%20-%20menu%20-%20La%20palette%20du%20gou%CC%82t.png), [Restaurant-2-Menu](https://github.com/Dimterion/Food-ordering-company-website/blob/main/dist/images/ohmyfood%20website%20design%20example%20-%20menu%20-%20La%20note%20enchant%C3%A9e.png), [Restaurant-3-Menu](https://github.com/Dimterion/Food-ordering-company-website/blob/main/dist/images/ohmyfood%20website%20design%20example%20-%20menu%20-%20%C3%80%20la%20fran%C3%A7aise.png), [Restaurant-4-Menu](https://github.com/Dimterion/Food-ordering-company-website/blob/main/dist/images/ohmyfood%20website%20design%20example%20-%20menu%20-%20Le%20d%C3%A9lice%20des%20sens.png)
